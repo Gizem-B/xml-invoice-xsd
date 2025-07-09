@@ -1,0 +1,33 @@
+server:
+  port: 8090
+
+
+spring:
+  application:
+    name: xsd-validator
+  devtools:
+    restart:
+      enabled: true
+  output:
+    ansi:
+      enabled: always
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: postgreSql
+    hibernate:
+      ddl-auto: update
+    properties:
+      show_sql: true
+      format_sql: false
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /docs
+
