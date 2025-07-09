@@ -60,8 +60,8 @@ Receives a JSON request with a Base64-encoded XML string.
 
 #### ❌ Invalid Base64 (500 Internal Server Error)
 
-```json
 **Request Body:**
+```json
 {
     "base64xml": "PHNwZWNpZmljYXRpb24geG1sbnM9Imh0dHA6Ly9...=="
 }
